@@ -1,0 +1,218 @@
+<!Doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title> TP1 </title>
+		
+		<!-- Ceci est un style CSS. On le verra dans les prochains TP -->
+		<style>
+			table { border-collapse: collapse;width: 100%;}
+			td,th { border-style: solid;text-align: center;}
+			img{width:200px; height:100px;}
+			video{width:400px;}
+			iframe{height:400px; width:600px;}
+		</style>
+		
+	</head>
+	
+	<body>
+		<h1 id="EX1"> TP 1 : HTML5 </h1>
+		<!-- Mettre au dessous de ce commentaire la réponse de l'exercice 4-->
+		
+		<h2>Exercice 1: Titres, paragraphes, et caractères spéciaux</h2>
+	
+		<p>un premiere paragraphe parlant de rien: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		Pellentesque maximus imperdiet malesuada. Vivamus sapien velit, pharetra nec tincidunt nec, efficitur imperdiet odio.</p>
+
+		
+		<p>Voici un deuxième paragraphe contenant un texte <strong>important</strong>, un texte mis <em>en emphase</em>, un texte<sup> en hauteur</sup> (exposant), et 
+		un texte <sub>en bas </sub>(en indice).</p>
+	
+		<p>Voici un troisième paragraphe contenant des caractères spéciaux représentés par des entités HTML.
+		Exemple: &gt; représente le caractère > , &copy; représente le symbole © , &#169; représente le symbole © (en code décimal) 
+		et &#x1F603; représente l'emoji 😃 (en code hexadécimal).
+		Mettez votre emoji favori ici : ❤️ . </p>
+		
+		<p>Vous avez peut être remarqué que les sauts de ligne et même les          espaces en HTML ne sont pas considéré pas vos navigateurs,
+		pour ajouter un saut de ligne il faut utiliser la balise &lt; br&gt; <br> et pour ajouter des espaces on peut utiliser le code du symbole 
+		d'un espace &nbsp; &nbsp; et voilà.</p>
+		
+		<pre>Voici aussi un paragraphe avec plusieurs espaces      et des
+				sauts de ligne qui peuvent être      bien
+							  conservés
+			par votre navigateur grâce à la balise &lt;pre&gt; (au lieu de la balise &lt;p&gt;) 
+		(Remarquez ici l'importance d'utiliser les entités HTML au lieu d'écrire le symbole directement) </pre>
+
+<!-- ************************************************************************************************** -->	
+		<h2 id="EX2">Exercice 2: Listes </h2>
+		<ol>
+			<li>L'évolution des spécifications</li>
+			<li>Les navigateurs</li>
+			<li>Les bonnes pratiques </li>
+			<li>Les éléments HTML 
+				<ol>
+					<li>Bien utiliser le HTML</li>
+					<li>Les balises et les contenus</li>
+					<li>Les attributs des éléments</li>
+					<li>Le bon usage de la syntaxe</li>
+					<li>L'imbrication des éléments</li>
+					<li>Les commentaires</li>
+				</ol></li>
+			<li>La structure des pages 
+				<ol>
+					<li>La structure générale des pages web</li>
+					<li>La déclaration doctype</li>
+					<li>L'élément html</li>
+					<li>L'élément head
+						<ul>
+							<li>Les éléments enfant de l'en-tête</li>
+							<li>Les éléments meta</li>
+							<li>L'élément title</li>
+							<li>L'élément link</li>
+							<li>L'élément style</li>
+							<li>L'élément script</li>
+					</li>
+				</ol></li>
+					<li>L'élément body</li>
+					<li>Les propriétés d'affichage</li>
+					<li>Exemple d'une structure simple</li>
+		</ol>
+<!-- ************************************************************************************************** -->			
+		<h2 id="EX3">Exercice 3: Les Tableaux </h2>	
+		<table>
+			<thead>
+				<tr>
+					<th rowspan="2">Product</th>
+					<th colspan="2">Q1</th>
+					<th colspan="2">Q2</th>
+					<th colspan="2">Q3</th>
+					<th colspan="2">Q4</th>
+				</tr>
+				<tr>
+			
+					<th>Quantity</th>
+					<th>Revenue</th>
+					<th>Quantity</th>
+					<th>Revenue</th>
+					<th>Quantity</th>
+					<th>Revenue</th>
+					<th>Quantity</th>
+					<th>Revenue</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">Product A</td>
+					<td>100</td>
+					<td>$500</td>
+					<td>120</td>
+					<td>$600</td>
+					<td>80</td>
+					<td>$400</td>
+					<td>150</td>
+					<td>$750</td>
+				</tr>
+				<tr>
+					<td colspan="2">Total: 450</td>
+					<td colspan="2">Total: $1200</td>
+					<td colspan="2">Total: 480</td>
+					<td colspan="2">Total: $900</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Product B</td>
+					<td>80</td>
+					<td>$400</td> 
+					<td>70</td>
+					<td>$350</td>
+					<td>100</td>
+					<td>$500</td>
+					<td>90</td>
+					<td>$450</td>
+				</tr>
+				<tr>
+					<td colspan="2">Total: 150</td>
+					<td colspan="2">Total: $750</td>
+					<td colspan="2">Total: 190</td>
+					<td colspan="2">$950</td>
+					
+				</tr>
+			</tbody>
+			<tfoot>
+				
+					<td>Total Sales</td>
+					<td>250</td>
+					<td>$900</td>
+					<td>190</td>
+					<td>$950</td>
+					<td>270</td>
+					<td>$900</td>
+					<td>240</td>
+					<td>$1200</td>
+				
+			</tfoot>
+		</table>
+<!-- ************************************************************************************************** -->				
+			
+		<h2 id="EX4">Exercice 4: Liens hypertextes</h2>
+		<p>Voici un exemple d'un lien hypertexte : <a href="https://www.w3schools.com/html/html_links.asp"> Documentation sur les liens hypertextes en HTML </a> </p> 
+		
+		<p>On peut aussi ajouter des liens (nommé ancre) vers des emplacements interne d'une page, comme par exemple: 
+		
+		
+			<ul>
+				<li><a href="#EX1">Exercice 1 : Titres, paragraphes, et caractères spéciaux</a></li>
+				<li><a href="#EX2">Exercice 2 : Les Listes</a></li>
+				<li><a href="#EX3">Exercice 3 : Les tableaux</a></li>
+				<li><a href="#EX4">Exercice 4 : Liens hypertextes</a></li>
+				<li><a href="#EX5">Exercice 5 : Médias</a></li>
+				<li><a href="#EX6">Exercice 6 : Les iframes</a></li>
+			</ul>
+<!-- ************************************************************************************************** -->	
+		<h2 id="EX5">Exercice 5: Medias</h2>	
+		<h3>Images</h3>
+		<p>Voici un exemple d'une image <img src="images/logo.png" alt ="Logo JUNIA"> ajouté au fil du texte.</p>
+		<p>Voici un exemple avec la balise sémantique figure:</p>
+		<figure>
+			<img src="images/logo.png" alt ="Logo JUNIA">
+			<figcaption >Le logo de JUNIA. </figcaption > <!-- Titre de l'image-->
+		</figure>
+		
+		<p>Les formats d'images supportés par tous les navigateurs sont: APNG, GIF, ICO, JPEG, PNG, SVG</p>
+		
+		<h3>Vidéos</h3>
+		<p>Voici un exemple d'ajout de vidéo. Seul les formats MP4, WebM et Ogg sont supportés en HTML5.</p>
+
+		<video controls autoplay muted loop>
+			<source src="images/juniaTV.mp4" type="video/mp4">
+			Votre navigateur ne supporte pas ce format de vidéo. <!-- Ce message sera affiché si la vidéo n'est pas suporté par le navigateur -->
+		</video>
+		
+		<h3>Audios</h3>
+		<p>Voici un exemple d'ajout d'audio. Seul les formats MP3, WAV et OGG sont supportés en HTML5.</p>
+		
+		<audio controls>
+			<source src="images/voeux.mp3" type="audio/mp3">
+			Votre navigateur ne supporte pas ce format d'audio.
+		</audio>
+		
+		<p>Remarque : Pour acceder aux différents médias ajoutés, on a utilisé <strong>des chemins relatifs</strong>.</p>	
+		
+<!-- ************************************************************************************************** -->			
+		<h2 id="EX6">Exercice 6: Les iframes </h2>
+		<p>Voici un exemple d'iframe permettant d'intérer une autre page html, en utilisant un chemin relatif.</p>
+		<iframe src="../html/page.html" title="Juste une page en HTML"></iframe>
+		
+		<p>Voici un autre exemple avec un chemin absolu</p>
+		<iframe src="https://www.junia.com/" title="Ecole JUNIA"></iframe>
+		
+		
+		<p>Ou encore cet exemple pour intégrer une video de youtube</p>
+		<iframe src="https://www.youtube.com/embed/PB9TuhAt5ks"></iframe>
+		
+		<!-- Inserez la vidéo ici -->
+		 <p>Ma vidéo est insére ici :</p>
+		<iframe width="420" height="315"
+		src="https://www.youtube.com/embed/9O-nn93Z5p4?controls=0&autoplay=1&mute=1&loop=1">
+		</iframe>
+	</body>
+</html>
